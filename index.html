@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Care and Cure Diagnostics</title>
+  <link rel="icon" href="Cure_logo.jpg" />
+  <style>
+    body { font-family: sans-serif; background: #f8f9fa; margin: 0; padding: 0; }
+    .container { max-width: 1200px; margin: auto; padding: 2rem; }
+    .section-title { text-align: center; font-size: 2rem; margin-bottom: 2rem; }
+    .category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .category-card { background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden; }
+    .category-image img { width: 100%; height: 180px; object-fit: cover; }
+    .category-info { padding: 1rem; text-align: center; }
+    .category-info h3 { margin: 0.5rem 0; }
+    .product-count { color: green; font-weight: bold; margin: 0.5rem 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="section-title">Medical Products & Equipment</h1>
+    <div id="product-list" class="category-grid"></div>
+  </div>
+
+  <script>
+    const products = [
+      {
+        name: "Basic Microscope",
+        image: "images/Sample_Product1.jpg",
+        description: "",
+        count: "1 Product"
+      }
+    ];
+    const container = document.getElementById("product-list");
+    products.forEach(product => {
+      const card = document.createElement("div");
+      card.className = "category-card";
+      card.innerHTML = `
+        <div class="category-image">
+          <img src="\${product.image}" alt="\${product.name}">
+        </div>
+        <div class="category-info">
+          <h3>\${product.name}</h3>
+          <div class="product-count">\${product.count}</div>
+          <p>\${product.description}</p>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+  </script>
+</body>
+</html>

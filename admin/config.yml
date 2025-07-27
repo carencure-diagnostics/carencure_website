@@ -1,0 +1,20 @@
+
+backend:
+  name: github
+  repo: carencure-diagnostics/carencure_website
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "products"
+    label: "Products"
+    folder: "products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Product Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Count", name: "count", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
