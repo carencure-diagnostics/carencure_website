@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Care and Cure Diagnostics</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <img src="assets/images/logo.png" style="height: 80px; margin-right: 20px;">
+        Care and Cure Diagnostics
+      </div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Complete solutions for Labs, Diagnostics, and Healthcare</h1>
+      <a href="#services" class="cta-button">Explore Services</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title">Our Diagnostic Services</h2>
+        <div class="services-grid"></div>
+      </div>
+    </section>
+
+    <section id="products" class="section" style="background: #f8f9fa;">
+      <div class="container" style="text-align: center;">
+        <h2 class="section-title">Medical Products & Equipment</h2>
+        <p>Explore our wide range of products on a dedicated page.</p>
+        <a href="products.html" class="cta-button">View Products</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>📞 +91 9879535049 / +91 7016951361</p>
+            <p>📧 prakash_joshi2@yahoo.com</p>
+            <p>📍 S/16, 2nd floor, City Point Complex, PATAN-384265</p>
+            <p>🕒 Mon–Sat: 9 AM – 8 PM | Emergency: 24/7</p>
+          </div>
+          <div class="contact-form">
+            <h3>Send a Message</h3>
+            <form onsubmit="handleFormSubmit(event)">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <input type="text" placeholder="Subject" required />
+              <textarea placeholder="Your Message" required></textarea>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Care and Cure Diagnostics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      alert("Thank you! We'll get back to you soon.");
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>
