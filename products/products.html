@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      margin: 30px 0 10px;
+    }
+    .category-section {
+      padding: 20px;
+    }
+    .category-title {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      padding: 10px;
+    }
+    .product-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .product-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+    .product-description {
+      font-size: 14px;
+      color: #555;
+    }
+    .product-count {
+      margin-top: 10px;
+      font-size: 13px;
+      background-color: #eaeaea;
+      padding: 5px 10px;
+      display: inline-block;
+      border-radius: 4px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Products</h1>
+
+  <!-- All Products -->
+  <div class="category-section">
+    <div class="category-title">All Products</div>
+    <div class="product-grid">
+
+      <!-- Repeat all product cards here -->
+      <div class="product-card">
+        <img src="labtest1.jpg" alt="Product Image" class="product-image" />
+        <div class="product-name">Spectrometer X200</div>
+        <div class="product-description">High precision spectrometer for lab analysis.</div>
+        <div class="product-count">Product Count: 12</div>
+      </div>
+
+      <div class="product-card">
+        <img src="pathology1.jpg" alt="Product Image" class="product-image" />
+        <div class="product-name">Microscope Pro Max</div>
+        <div class="product-description">Advanced microscope for pathology labs.</div>
+        <div class="product-count">Product Count: 8</div>
+      </div>
+
+      <div class="product-card">
+        <img src="emergency1.jpg" alt="Product Image" class="product-image" />
+        <div class="product-name">Rapid COVID Test Kit</div>
+        <div class="product-description">Instant result diagnostic kit for emergencies.</div>
+        <div class="product-count">Product Count: 50</div>
+      </div>
+
+      <div class="product-card">
+        <img src="education1.jpg" alt="Product Image" class="product-image" />
+        <div class="product-name">Mini Chemistry Set</div>
+        <div class="product-description">Interactive chemistry kit for educational purposes.</div>
+        <div class="product-count">Product Count: 25</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Laboratory Testing -->
+  <div class="category-section">
+    <div class="category-title">Laboratory Testing</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="labtest1.jpg" alt="Product Image" class="product-image" />
+        <div class="product-name">Spectrometer X200</div>
+        <div class="product-description">High precision spectrometer for lab analysis.</div>
+        <div class="product-count">Product Count: 12</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pathology Products -->
+  <div class="category-section">
+    <div class="category-title">Pathology Products</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="pathology1.jpg" alt="Product Image" class="product-image" />
+        <div class="product-name">Microscope Pro Max</div>
+        <div class="product-description">Advanced microscope for pathology labs.</div>
+        <div class="product-count">Product Count: 8</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Emergency Diagnostics -->
+  <div class="category-section">
+    <div class="category-title">Emergency Diagnostics</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="emergency1.jpg" alt="Product Image" class="product-image" />
+        <div class="product-name">Rapid COVID Test Kit</div>
+        <div class="product-description">Instant result diagnostic kit for emergencies.</div>
+        <div class="product-count">Product Count: 50</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Educational Lab Equipment -->
+  <div class="category-section">
+    <div class="category-title">Educational Lab Equipment</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="education1.jpg" alt="Product Image" class="product-image" />
+        <div class="product-name">Mini Chemistry Set</div>
+        <div class="product-description">Interactive chemistry kit for educational purposes.</div>
+        <div class="product-count">Product Count: 25</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
 
