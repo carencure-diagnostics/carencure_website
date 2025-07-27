@@ -10,9 +10,12 @@ const products = [
     description: "Digital monitor for checking blood sugar levels at home."
   }
 ];
+
 const productList = document.getElementById('product-list');
 const productCount = document.getElementById('product-count');
+
 productCount.textContent = `Total Products: ${products.length}`;
+
 products.forEach(product => {
   const card = document.createElement('div');
   card.className = 'product-card';
@@ -23,3 +26,4 @@ products.forEach(product => {
   `;
   productList.appendChild(card);
 });
+
